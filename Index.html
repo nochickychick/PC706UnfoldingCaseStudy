@@ -100,11 +100,11 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="26Mar20_PC706UCS_Corrections" startnode="1" creator="Twine" creator-version="2.3.5" ifid="9D00CADD-0350-49D0-9B6F-22A7B6AD033E" zoom="0.25" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Starthere" tags="" position="408,117" size="100,100">Demographics: Lisa Smith, 16 years old, female, bi-racial 16-year-old with a complaint of feeling “tired&quot; for the last 3 1/2 months (onset) but also been feeling increasingly “nervous”.  2-3 mornings each week she “feels too sick and tired to go to school”. She attends the local regional high school, however once at school she is continually going to the nurse’s office requesting to leave because she is &quot;tired&quot;. For the last week, she has noticed some “swollen” nodules at the back of her neck “maybe my lymph nodes” and states she has had a fever, she does not have a thermometer at home. Most mornings she states she also has a dull ache in the back of her head (location) rates as 6/10 (characteristic) , no help with OTC Tylenol or IBP (alleviatingRelieving). She states she has a belly ache that is about a 3/10 and non-radiating but occasionally with nausea and vomiting. Some days she feels lightheaded and dizzy. She just completed her menses, but notes that she is very irregular. Menses are light and last 4-7 days. 
+	<tw-storydata name="26Mar20_PC706UCS_Corrections" startnode="1" creator="Twine" creator-version="2.3.5" ifid="9D00CADD-0350-49D0-9B6F-22A7B6AD033E" zoom="0.25" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Starthere" tags="" position="132,153" size="100,100">Demographics: Lisa Smith, 16 years old, female, bi-racial 16-year-old with a complaint of feeling “tired&quot; for the last 3 1/2 months (onset) but also been feeling increasingly “nervous”.  2-3 mornings each week she “feels too sick and tired to go to school”. She attends the local regional high school, however once at school she is continually going to the nurse’s office requesting to leave because she is &quot;tired&quot;. For the last week, she has noticed some “swollen” nodules at the back of her neck “maybe my lymph nodes” and states she has had a fever, she does not have a thermometer at home. Most mornings she states she also has a dull ache in the back of her head (location) rates as 6/10 (characteristic) , no help with OTC Tylenol or IBP (alleviatingRelieving). She states she has a belly ache that is about a 3/10 and non-radiating but occasionally with nausea and vomiting. Some days she feels lightheaded and dizzy. She just completed her menses, but notes that she is very irregular. Menses are light and last 4-7 days. 
 
 Lives at home with mother and mother&#39;s boyfriend, and younger sister. She has a boyfriend that she has been dating &quot;steady&quot; for 2 months, states she is sexually active.
 &lt;&lt;button [[Q1]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Q1" tags="" position="412,339" size="100,100">Please answer the following questions. You must answer the question correctly to move to the next question
+</tw-passagedata><tw-passagedata pid="2" name="Q1" tags="" position="396,167" size="100,100">Please answer the following questions. You must answer the question correctly to move to the next question
 
 The visit with Lisa is a comprehensive or episodic visit? Please select the correct answer
 
@@ -113,7 +113,7 @@ Comprehensive &lt;&lt;checkbox &quot;$answertwo&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Submit|AnswerOne]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="3" name="Q2" tags="" position="457,639" size="100,100">The health history section of the note will contain:(check all that apply)
+</tw-passagedata><tw-passagedata pid="3" name="Q2" tags="" position="949,163" size="100,100">The health history section of the note will contain:(check all that apply)
 
 1. HPI &lt;&lt;checkbox &quot;$HPI&quot; false true &gt;&gt;
 2. Past history &lt;&lt;checkbox &quot;$pasthistory&quot; false true &gt;&gt;
@@ -123,146 +123,151 @@ Comprehensive &lt;&lt;checkbox &quot;$answertwo&quot; false true&gt;&gt;
 6. Medications and allergies &lt;&lt;checkbox &quot;$medsandallergies&quot; false true &gt;&gt;
 7. Vital signs &lt;&lt;checkbox &quot;$vitalsigns&quot; false true &gt;&gt;
 
-&lt;&lt;button [[Go on|Q2A]]&gt;&gt;  &lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Q2A" tags="" position="457,789" size="100,100">&lt;&lt;if $HPI eq true and $pasthistory eq true and $familyhistory eq true and $personalsocialhistory eq true and $ROS eq true and $medsandallergies eq true and $vitalsigns eq false&gt;&gt;
+&lt;&lt;button [[Go on|Q2A]]&gt;&gt;  &lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Q2A" tags="" position="1233,161" size="100,100">&lt;&lt;if $HPI eq true and $pasthistory eq true and $familyhistory eq true and $personalsocialhistory eq true and $ROS eq true and $medsandallergies eq true and $vitalsigns eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on|Q3]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again
 &lt;&lt;button  [[Please try again|Q2]] &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Q3" tags="" position="382,939" size="100,100">The History of Present Illness (HPI) falls into which category of information?
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Q3" tags="" position="1494,155" size="100,100">The History of Present Illness (HPI) falls into which category of information?
 objective data &lt;&lt;checkbox &quot;$objective&quot; false true&gt;&gt;
 subjective data &lt;&lt;checkbox &quot;$subjective&quot; false true&gt;&gt;
  assessment data &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
  
  
- &lt;&lt;button [[Go on/Q3A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Go on/Q3A" tags="" position="382,1089" size="100,100">&lt;&lt;if $objective eq false and $subjective eq true and $assessment eq false &gt;&gt;
+ &lt;&lt;button [[Q3A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="Q3A" tags="" position="1730,157" size="100,100">&lt;&lt;if $objective eq false and $subjective eq true and $assessment eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q4]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Go on|Q4]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q3]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Please try again|Q3]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="7" name="Go on Q4" tags="" position="307,1239" size="100,100">When the provider first meets Lisa, she/he asks “What brings you to the office today?”
+</tw-passagedata><tw-passagedata pid="7" name="Q4" tags="" position="1999,163" size="100,100">When the provider first meets Lisa, she/he asks “What brings you to the office today?”
 Lisa’s reply is placed where in the documentation of the note?
+
 History of Present Illness (HPI) &lt;&lt;checkbox &quot;$HPI&quot; false true&gt;&gt;
 Chief Complaint &lt;&lt;checkbox &quot;$CC&quot; false true&gt;&gt;
 Subjective data &lt;&lt;checkbox &quot;$subjective&quot; false true&gt;&gt;
 
-&lt;&lt;button [[Go on/Q4A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="8" name="Please try again/Q3" tags="" position="457,1239" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Go on/Q4A" tags="" position="1055,1405" size="100,100">D&lt;&lt;if $HPI eq false and $CC eq true and $subjective eq false &gt;&gt;
+&lt;&lt;button [[Go on|Q4A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Please try again/Q3" tags="" position="3225,375" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Q4A" tags="" position="303,1309" size="100,100">&lt;&lt;if $HPI eq false and $CC eq true and $subjective eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q5]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Continue|Q5]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q4]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Please try again|Q4]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="10" name="Go on Q5" tags="" position="232,1539" size="100,100">During the clinical encounter with Lisa, you notice that she is shaking her right leg and nervously pulling at a strand of hair. This information would become a part of the: 
+</tw-passagedata><tw-passagedata pid="10" name="Q5" tags="" position="600,1303" size="100,100">During the clinical encounter with Lisa, you notice that she is shaking her right leg and nervously pulling at a strand of hair. This information would become a part of the: 
+
 objective data &lt;&lt;checkbox&quot;$objective&quot; false true&gt;&gt;
 subjective data &lt;&lt;checkbox&quot;$subjective&quot; false true&gt;&gt;
 assessment data &lt;&lt;checkbox&quot;$assessment&quot; false true&gt;&gt;
 
 
-&lt;&lt;button [[Go on/Q5A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="11" name="Please try again/Q4" tags="" position="382,1539" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Go on/Q5A" tags="" position="1112,1633" size="100,100">&lt;&lt;if $objective eq true and $subjective eq false and $objective eq false&gt;&gt;
+&lt;&lt;button [[Q5A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Q5A" tags="" position="864,1301" size="100,100">&lt;&lt;if $objective eq true and $subjective eq false and $objective eq false&gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q6]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Go on|Q6]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q5]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Please try again|Q5]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
--</tw-passagedata><tw-passagedata pid="13" name="Go on Q6" tags="" position="1457,1531" size="100,100">Lisa tells you during the interview that most mornings she also has a dull ache in the back of her head which is 6/10, and she gets no relief with OTC Tylenol or Motrin.  
+-</tw-passagedata><tw-passagedata pid="12" name="Q6" tags="" position="1137,1299" size="100,100">Lisa tells you during the interview that most mornings she also has a dull ache in the back of her head which is 6/10, and she gets no relief with OTC Tylenol or Motrin.  
+
  Assessment &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
  History of present illness (HPI)&lt;&lt;checkbox &quot;HPI&quot; false true&gt;&gt;
  Review of systems &lt;&lt;checkbox &quot;$ROS&quot; false true&gt;&gt;
  
--&lt;&lt;button [[Go on/Q6A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="14" name="Please try again/Q5" tags="" position="307,1839" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="Go on/Q6A" tags="" position="1185,1941" size="100,100">&lt;&lt;if $assessment eq true and $HPI eq false and $ROS eq false &gt;&gt;
+&lt;&lt;button [[Go on|Q6A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Q6A" tags="" position="1397,1293" size="100,100">&lt;&lt;if $assessment eq true and $HPI eq false and $ROS eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q7]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Continue|Q7]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q6]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Go on Q7" tags="" position="1626,1827" size="100,100">The Review of Systems is found in which section of the provider note?
+&lt;&lt;button [[Please try again|Q6]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Q7" tags="" position="1602,1295" size="100,100">The Review of Systems is found in which section of the provider note?
 subjective &lt;&lt;checkbox &quot;$subjective&quot; false true&gt;&gt;
 objective &lt;&lt;checkbox &quot;$objective&quot; false true&gt;&gt;
 assessment &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q7A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="17" name="Please try again/Q6" tags="" position="232,2139" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Go on/Q7A" tags="" position="1162,2221" size="100,100">&lt;&lt;if $subjective eq true and $objective eq false and $assessment eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="15" name="Please try again/Q6" tags="" position="2804,387" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="Go on/Q7A" tags="" position="1882,1289" size="100,200">&lt;&lt;if $subjective eq true and $objective eq false and $assessment eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q8]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Go on|Q8]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q7]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Go on Q8" tags="" position="7,2440" size="100,100">During the initial encounter with the patient, use of the mnemonic OLDCARTS assists the provider with 
+&lt;&lt;button [[Please try again|Q7]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Q8" tags="" position="359,2204" size="100,100">During the initial encounter with the patient, use of the mnemonic OLDCARTS assists the provider with 
+
 data aggregation &lt;&lt;checkbox &quot;$data&quot; false true&gt;&gt;
 symptom analysis &lt;&lt;checkbox &quot;$analysis&quot; false true&gt;&gt;
 review of symptoms &lt;&lt;checkbox &quot;$ROS&quot; false true&gt;&gt;
 
-&lt;&lt;button [[Go on/Q8A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Submit|Q8A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="20" name="Please try again/Q7" tags="" position="157,2439" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Go on/Q8A" tags="" position="1211,2526" size="100,100">&lt;&lt;if $data eq false and $analysis eq true and $ROS eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="18" name="Q8A" tags="" position="711,2198" size="100,100">&lt;&lt;if $data eq false and $analysis eq true and $ROS eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q9]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Go on|Q9]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q8]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;	</tw-passagedata><tw-passagedata pid="22" name="Go on Q9" tags="" position="0,2740" size="100,100">DWhen the provider begins to document the information from the patient, the standard method to write the information is
+&lt;&lt;button [[Please try again|Q8]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;	</tw-passagedata><tw-passagedata pid="19" name="Q9" tags="" position="944,2192" size="100,100">When the provider begins to document the information from the patient, the standard method to write the information is
+
 in the order of OLDCARTS &lt;&lt;checkbox &quot;$oldcarts&quot; false true&gt;&gt;
 in the order of the patient’s story &lt;&lt;checkbox &quot;$ptstory&quot; false true&gt;&gt;
 in chronological order &lt;&lt;checkbox &quot;$chronological&quot; false true&gt;&gt;
 
-&lt;&lt;button [[Go on/Q9A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Q9A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="23" name="Please try again/Q8" tags="" position="120,2740" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="24" name="Go on/Q9A" tags="" position="1192,2706" size="100,100">&lt;&lt;if $oldcarts eq false and $ptstory eq false and $chronological eq true &gt;&gt;
+</tw-passagedata><tw-passagedata pid="20" name="Please try again/Q8" tags="" position="2804,520" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Q9A" tags="" position="1224,2186" size="100,100">&lt;&lt;if $oldcarts eq false and $ptstory eq false and $chronological eq true &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q10]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Continue|Q10]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q9]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Please try again|Q9]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;	
-</tw-passagedata><tw-passagedata pid="25" name="Go on Q10" tags="" position="0,3040" size="100,100">Lisa has informed the provider that she has a dull unilateral, throbbing ache towards  the back of her head. The provider begins to hypothesize that she might have headaches. Using your resources identify the Likelihood ratio (LR) for this complaint. 
+</tw-passagedata><tw-passagedata pid="22" name="Q10" tags="" position="1436,2200" size="100,100">Lisa has informed the provider that she has a dull unilateral, throbbing ache towards  the back of her head. The provider begins to hypothesize that she might have headaches. Using your resources identify the Likelihood ratio (LR) for this complaint. 
  
 LR 2.1 &lt;&lt;checkbox &quot;$2.1&quot; false true&gt;&gt;
 LR 3.3 &lt;&lt;checkbox &quot;$3.3&quot; false true&gt;&gt;
 LR 6.5 &lt;&lt;checkbox &quot;$6.5&quot; false true&gt;&gt;
 
-&lt;&lt;button [[Go on/Q10A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="26" name="Please try again/Q9" tags="" position="120,3040" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Go on/Q10A" tags="" position="1224,2906" size="100,100">&lt;&lt;if $2.1 eq false and $3.3 eq true and $6.5 eq false &gt;&gt;
+&lt;&lt;button [[Submit|Q10A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+</tw-passagedata><tw-passagedata pid="23" name="Q10A" tags="" position="1772,2206" size="100,100">&lt;&lt;if $2.1 eq false and $3.3 eq true and $6.5 eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q11]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Continue|Q11]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q10]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Please try again|Q10]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;	
-</tw-passagedata><tw-passagedata pid="28" name="Go on Q11" tags="" position="0,3340" size="100,100">The patient informs you that she “does not smoke but occasionally will vape” and her parents divorced when she was 8 years old. This information is found wherein the progress note?
+</tw-passagedata><tw-passagedata pid="24" name="Q11" tags="" position="384,2668" size="100,100">The patient informs you that she “does not smoke but occasionally will vape” and her parents divorced when she was 8 years old. This information is found wherein the progress note?
 HPI &lt;&lt;checkbox &quot;$HPI&quot; false true&gt;&gt;
 Review of Systems &lt;&lt;checkbox &quot;$ROS&quot; false true&gt;&gt;
 Social History &lt;&lt;checkbox &quot;$SH&quot; false true&gt;&gt;
 
-&lt;&lt;button [[Go on/Q11A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="29" name="Please try again/Q10" tags="" position="120,3340" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Go on/Q11A" tags="" position="1236,3206" size="100,100">&lt;&lt;if $HPI eq false and $ROS eq false and $SH eq true &gt;&gt;
+&lt;&lt;button [[Submit|Q11A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+</tw-passagedata><tw-passagedata pid="25" name="Q11A" tags="" position="740,2658" size="100,100">&lt;&lt;if $HPI eq false and $ROS eq false and $SH eq true &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q12]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Continue|Q12]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q11]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="Go on Q12" tags="" position="0,3640" size="100,100">From the patient’s description of her illness, which of the eight dimensions of symptom analysis are not present. 
+&lt;&lt;button [[Please try again|Q11]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Q12" tags="" position="996,2668" size="100,100">From the patient’s description of her illness, which of the eight dimensions of symptom analysis are not present. 
 aggravating &lt;&lt;checkbox &quot;$aggravating&quot; false true&gt;&gt;
 associated manifestations &lt;&lt;checkbox &quot;$asscoiated&quot; false true&gt;&gt;
 Quality &lt;&lt;checkbox &quot;$quality&quot; false true&gt;&gt;
 
-&lt;&lt;button [[Go on/Q12A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Q12A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="32" name="Please try again/Q11" tags="" position="120,3640" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Go on/Q12A" tags="" position="1188,3450" size="100,100">&lt;&lt;if $aggravating eq true and $associated eq false and $quality eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="27" name="Q12A" tags="" position="1604,2698" size="100,100">&lt;&lt;if $aggravating eq true and $associated eq false and $quality eq false &gt;&gt;
 This is the correct answer.
-&lt;&lt;button [[Go on Q13]]&gt;&gt; &lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[Continue|Q13]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
-&lt;&lt;button [[Please try again/Q12]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Go on Q13" tags="" position="1420,3544" size="100,100">Which of the following would be documented in the subjective section of a patient’s note?
+&lt;&lt;button [[Please try again|Q12]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="Q13" tags="" position="1840,3040" size="100,100">Which of the following would be documented in the subjective section of a patient’s note?
 vital signs &lt;&lt;checkbox &quot;$vitals&quot; false true&gt;&gt;
 Medications &lt;&lt;checkbox &quot;$meds&quot; false true&gt;&gt;
 General survey &lt;&lt;checkbox &quot;$general survey&quot; false true&gt;&gt;
@@ -271,41 +276,41 @@ General survey &lt;&lt;checkbox &quot;$general survey&quot; false true&gt;&gt;
 
 
 
-</tw-passagedata><tw-passagedata pid="35" name="Please try again/Q12" tags="" position="120,3940" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="Go on/Q13A" tags="" position="1220,3666" size="100,100">&lt;&lt;if $vitals eq false and $meds eq true and $generalsurvey eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="29" name="Go on/Q13A" tags="" position="1696,3514" size="100,100">&lt;&lt;if $vitals eq false and $meds eq true and $generalsurvey eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Go on Q14]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
 &lt;&lt;button [[Please try again/Q13]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;	
-</tw-passagedata><tw-passagedata pid="37" name="Go on Q14" tags="" position="0,4240" size="100,100">What determines whether the examination for Lisa is considered episodic (focused) or comprehensive?
+</tw-passagedata><tw-passagedata pid="30" name="Go on Q14" tags="" position="0,4240" size="100,100">What determines whether the examination for Lisa is considered episodic (focused) or comprehensive?
 age of the patient &lt;&lt;checkbox &quot;$age false true&gt;&gt;
 reason for the visit and extent of the illness &lt;&lt;checkbox &quot;$reason false true&gt;&gt; 
 amount of time that is allocated for the visit &lt;&lt;checkbox &quot;$time false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q14A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
- </tw-passagedata><tw-passagedata pid="38" name="Please try again/Q13" tags="" position="120,4240" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Go on/Q14A" tags="" position="0,4390" size="100,100">&lt;&lt;if $age eq false and $reason eq true and $time eq false &gt;&gt;
+ </tw-passagedata><tw-passagedata pid="31" name="Please try again/Q13" tags="" position="120,4240" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Go on/Q14A" tags="" position="0,4390" size="100,100">&lt;&lt;if $age eq false and $reason eq true and $time eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Go on Q15]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
 &lt;&lt;button [[Please try again/Q14]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;	</tw-passagedata><tw-passagedata pid="40" name="Go on Q15" tags="" position="0,4540" size="100,100">Likelihood ratios convey to the provider: 
+&lt;&lt;/if&gt;&gt;	</tw-passagedata><tw-passagedata pid="33" name="Go on Q15" tags="" position="0,4540" size="100,100">Likelihood ratios convey to the provider: 
 confirmation of the disease process &lt;&lt;checkbox &quot;$confirmation false true&gt;&gt;
 diagnostic weight of the sign or symptom &lt;&lt;checkbox &quot;$weight&quot; false true&gt;&gt;
 sensitivity and specificity of the sign or symptom &lt;&lt;checkbox &quot;$S&amp;S&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q15A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="41" name="Please try again/Q14" tags="" position="120,4540" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Go on/Q15A" tags="" position="0,4689" size="100,100">&lt;&lt;if $confirmation eq true and $weight eq false and $S&amp;S eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="34" name="Please try again/Q14" tags="" position="120,4540" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="Go on/Q15A" tags="" position="0,4689" size="100,100">&lt;&lt;if $confirmation eq true and $weight eq false and $S&amp;S eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Go on Q16]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
 &lt;&lt;button [[Please try again/Q15]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;	
-</tw-passagedata><tw-passagedata pid="43" name="Go on Q16" tags="" position="0,4839" size="100,100">The provider uses the available tools (library resources of Dynamed/EEP/McGee) to identify signs and symptoms of preliminary hypotheses. When subjective data argue against or refutes your hypothesis, this is known as
+</tw-passagedata><tw-passagedata pid="36" name="Go on Q16" tags="" position="0,4839" size="100,100">The provider uses the available tools (library resources of Dynamed/EEP/McGee) to identify signs and symptoms of preliminary hypotheses. When subjective data argue against or refutes your hypothesis, this is known as
 significant negative &lt;&lt;checkbox &quot;$positive&quot; false true&gt;&gt;
 significant positive &lt;&lt;checkbox &quot;$negative&quot; false true&gt;&gt;
 confounder &lt;&lt;checkbox &quot;$confounder&quot; false true&gt;&gt;
@@ -314,7 +319,7 @@ confounder &lt;&lt;checkbox &quot;$confounder&quot; false true&gt;&gt;
 
 
 
-</tw-passagedata><tw-passagedata pid="44" name="Please try again/Q15" tags="" position="120,4839" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Go on/Q16A" tags="" position="0,4989" size="100,100">&lt;&lt;if $positive eq false and $negative eq false and $confounder eq true &gt;&gt;
+</tw-passagedata><tw-passagedata pid="37" name="Please try again/Q15" tags="" position="120,4839" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="Go on/Q16A" tags="" position="0,4989" size="100,100">&lt;&lt;if $positive eq false and $negative eq false and $confounder eq true &gt;&gt;
 This is the correct answer.
 XXXX
 
@@ -324,7 +329,7 @@ XXXX
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
 &lt;&lt;button [[Please try again/Q16]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Go on Q17" tags="" position="0,5139" size="100,100">The provider will think through each diagnosis in its own “solo” and not combined with other diagnoses. First, the provider will think through the hypothesis of Migraine.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Go on Q17" tags="" position="0,5139" size="100,100">The provider will think through each diagnosis in its own “solo” and not combined with other diagnoses. First, the provider will think through the hypothesis of Migraine.
 Lisa has told the provider that she has a throbbing pain in her head that is dull and achy. Is the data a positive, negative or confounder. Which definition supports your decision? **Remember to use your resources and tools. 
 
 should support the hypothesis and does &lt;&lt;checkbox &quot;$support&quot; false true&gt;&gt;
@@ -334,7 +339,7 @@ should support the hypothesis and does not/ should not support the hypothesis an
 &lt;&lt;button [[Go on/Q17A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
  
-</tw-passagedata><tw-passagedata pid="47" name="Please try again/Q16" tags="" position="120,5139" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="Go on/Q17A" tags="" position="0,5289" size="100,100">&lt;&lt;if $support eq true and $notsupport eq false and $both eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="40" name="Please try again/Q16" tags="" position="120,5139" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Go on/Q17A" tags="" position="0,5289" size="100,100">&lt;&lt;if $support eq true and $notsupport eq false and $both eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Go on Q18]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -345,7 +350,7 @@ This is incorrect, please try again,
 
 
 
-</tw-passagedata><tw-passagedata pid="49" name="Go on Q18" tags="" position="1252,5447" size="100,100">The provider thinks through her second hypothesis of Mononucleosis. Lisa has told the provider that she has not noticed a sore throat. Is the data a positive, negative or confounder? Choose the correct definition? 
+</tw-passagedata><tw-passagedata pid="42" name="Go on Q18" tags="" position="1252,5447" size="100,100">The provider thinks through her second hypothesis of Mononucleosis. Lisa has told the provider that she has not noticed a sore throat. Is the data a positive, negative or confounder? Choose the correct definition? 
 should support the hypothesis and does &lt;&lt;checkbox &quot;$support&quot; false true&gt;&gt;
 should not support the hypothesis and does not &lt;&lt;checkbox &quot;$notsupport&quot; false true&gt;&gt;
 should support the hypothesis and does not/ should not support the hypothesis and does &lt;&lt;checkbox &quot;$not/does&quot; false true&gt;&gt;
@@ -353,13 +358,13 @@ should support the hypothesis and does not/ should not support the hypothesis an
 &lt;&lt;button [[Go on/Q18a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
  
-</tw-passagedata><tw-passagedata pid="50" name="Please try again/Q17" tags="" position="160,5287" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="Go on/Q18a" tags="" position="1128,5601" size="100,100">&lt;&lt;if $support eq true and $notsupport eq false and $not/does eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="43" name="Please try again/Q17" tags="" position="160,5287" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Go on/Q18a" tags="" position="1128,5601" size="100,100">&lt;&lt;if $support eq true and $notsupport eq false and $not/does eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q19]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question18]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="52" name="Go on [Q19" tags="" position="1041,5775" size="100,100">The provider thinks through the third hypothesis of PCOS. Lisa has told the provider that she does not have any chest pain. Is the data a positive, negative or confounder and which definition is correct? 
+</tw-passagedata><tw-passagedata pid="45" name="Go on [Q19" tags="" position="1041,5775" size="100,100">The provider thinks through the third hypothesis of PCOS. Lisa has told the provider that she does not have any chest pain. Is the data a positive, negative or confounder and which definition is correct? 
 should support the hypothesis and does &lt;&lt;checkbox &quot;$support&quot; false true&gt;&gt;
 should not support the hypothesis and does not &lt;&lt;checkbox &quot;$notsupp&quot; false true&gt;&gt;
 should support the hypothesis and does not/ should not support the hypothesis and does &lt;&lt;checkbox &quot;$not/does&quot; false true&gt;&gt;
@@ -367,27 +372,27 @@ should support the hypothesis and does not/ should not support the hypothesis an
 
 
 &lt;&lt;button [[Go on/Q19a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="53" name="Please try again/question18" tags="" position="1347,5631" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Go on/Q19a" tags="" position="1041,5925" size="100,100">&lt;&lt;if $support eq false and $notsupp eq true and $not/does false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="46" name="Please try again/question18" tags="" position="1347,5631" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Go on/Q19a" tags="" position="1041,5925" size="100,100">&lt;&lt;if $support eq false and $notsupp eq true and $not/does false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q20]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question19]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="55" name="Go on [Q20" tags="" position="966,6075" size="100,100">Interrater/Intrarater reliability question 
+</tw-passagedata><tw-passagedata pid="48" name="Go on [Q20" tags="" position="966,6075" size="100,100">Interrater/Intrarater reliability question 
 
 
 &lt;&lt;checkbox &quot;$not/does&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q20a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="56" name="Please try again/question19" tags="" position="1240,5935" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="57" name="Go on/Q20a" tags="" position="966,6225" size="100,100">&lt;&lt;if $answerone eq true and $answer2 eq false and $answer3 eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="49" name="Please try again/question19" tags="" position="1240,5935" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Go on/Q20a" tags="" position="966,6225" size="100,100">&lt;&lt;if $answerone eq true and $answer2 eq false and $answer3 eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [D2]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question20]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="58" name="Please try again/question20" tags="" position="1185,6247" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="59" name="Go on [D2" tags="" position="1011,6375" size="100,100">General Survey. sitting upright and erect, casual and neatly dressed, appears stated age, no body piercings or tattoos, brown shoulder length hair
+</tw-passagedata><tw-passagedata pid="51" name="Please try again/question20" tags="" position="1185,6247" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Go on [D2" tags="" position="1011,6375" size="100,100">General Survey. sitting upright and erect, casual and neatly dressed, appears stated age, no body piercings or tattoos, brown shoulder length hair
 Vital signs: HR: 101, 20 RR: 18 ,  BP: 132/88 Temp: 98.3F . BMI 30.2
 Skin:  pink, warm, dry and elastic.  No lesions or excoriations noted.   Hair brown, shoulder length, clean, shiny. Hands well-manicured with clear enamel.   
 HEENT: mucous membranes are moist: Eyes are dull in appearance, pink conjunctiva, Tympanic membranes are red and inflamed, posterior pharynx erythemic
@@ -410,14 +415,14 @@ Labs Diagnostics: PHQ9, ID-Migraine screening tool, GAD, The Severity Measure fo
 
  
         	
-</tw-passagedata><tw-passagedata pid="60" name="Go on/Q21" tags="" position="1011,6525" size="100,100">Prior to beginning your physical examination, you have thought through the components of the examination you want to complete. This is called the period of _________
+</tw-passagedata><tw-passagedata pid="53" name="Go on/Q21" tags="" position="1011,6525" size="100,100">Prior to beginning your physical examination, you have thought through the components of the examination you want to complete. This is called the period of _________
 cognitive transition&lt;&lt;checkbox &quot;$cognitive&quot; false true&gt;&gt;
 data transfer &lt;&lt;checkbox &quot;$data&quot; false true&gt;&gt;
 information review &lt;&lt;checkbox &quot;$information review&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q21a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="61" name="Go on/Q21a" tags="" position="1011,6675" size="100,100">&lt;&lt;if $cognitive  eq true and $data eq false and $information review eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="54" name="Go on/Q21a" tags="" position="1011,6675" size="100,100">&lt;&lt;if $cognitive  eq true and $data eq false and $information review eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q22]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -426,7 +431,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="62" name="Go on [Q22" tags="" position="936,6825" size="100,100">Once the Subjective (S) portion of the exam is complete, the provider will begin the objective (O) portion or the physical examination.  Before beginning the physical examination, the provider must consider which of the following?
+</tw-passagedata><tw-passagedata pid="55" name="Go on [Q22" tags="" position="936,6825" size="100,100">Once the Subjective (S) portion of the exam is complete, the provider will begin the objective (O) portion or the physical examination.  Before beginning the physical examination, the provider must consider which of the following?
 History of present illness (HPI) &lt;&lt;checkbox &quot;$HPI&quot; false true&gt;&gt;
 Hypotheses (potential diagnosis)&lt;&lt;checkbox &quot;$DX&quot; false true&gt;&gt;
 Active Medical History, Past Med History, Family History, Social History &lt;&lt;checkbox &quot;$hx&quot; false true&gt;&gt;
@@ -436,7 +441,7 @@ All of the above &lt;&lt;checkbox &quot;$all&quot; false true&gt;&gt;
 &lt;&lt;button [[Go on/Q22a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="63" name="Please try again/question21" tags="" position="1246,6673" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="64" name="Go on/Q22a" tags="" position="936,6975" size="100,100">&lt;&lt;if $HPI eq true and $DX eq false and $hx eq false and &quot;$all&quot; false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="56" name="Please try again/question21" tags="" position="1246,6673" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="57" name="Go on/Q22a" tags="" position="936,6975" size="100,100">&lt;&lt;if $HPI eq true and $DX eq false and $hx eq false and &quot;$all&quot; false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q23]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -450,23 +455,23 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="65" name="Go on [Q23" tags="" position="861,7125" size="100,100">When the provider begins the physical examination on the patient, they always use the head to toe format for all patients.
+</tw-passagedata><tw-passagedata pid="58" name="Go on [Q23" tags="" position="861,7125" size="100,100">When the provider begins the physical examination on the patient, they always use the head to toe format for all patients.
  true  &lt;&lt;checkbox &quot;$true&quot; false true&gt;&gt;
  false  &lt;&lt;checkbox &quot;$false&quot; false true&gt;&gt;
 &lt;&lt;button [[Go on/Q23a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="66" name="Please try again/question22" tags="" position="1235,6961" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="67" name="Go on/Q23a" tags="" position="861,7275" size="100,100">&lt;&lt;if $true eq false and $false eq true &gt;&gt;
+</tw-passagedata><tw-passagedata pid="59" name="Please try again/question22" tags="" position="1235,6961" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="60" name="Go on/Q23a" tags="" position="861,7275" size="100,100">&lt;&lt;if $true eq false and $false eq true &gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q24]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question23]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="68" name="Go on [Q24" tags="" position="954,7429" size="100,100">The primary format to document the examination of the patient is in what order?
+</tw-passagedata><tw-passagedata pid="61" name="Go on [Q24" tags="" position="954,7429" size="100,100">The primary format to document the examination of the patient is in what order?
 Inspection, palpation, percussion, auscultation &lt;&lt;checkbox &quot;$IPaPA&quot; false 
 Inspection, auscultation, palpation, percussion &lt;&lt;checkbox &quot;$IAPP&quot; false 
 Inspection, percussion, palpation, auscultation&lt;&lt;checkbox &quot;$IPePA&quot; false true&gt;&gt;
 &lt;&lt;button [[Go on/Q24a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
- </tw-passagedata><tw-passagedata pid="69" name="Please try again/question23" tags="" position="1224,7173" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="70" name="Go on/Q24a" tags="" position="954,7579" size="100,100">&lt;&lt;if $IPaPA is true and $IAPP eq false and $IPePA eq false&gt;&gt;
+ </tw-passagedata><tw-passagedata pid="62" name="Please try again/question23" tags="" position="1224,7173" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="63" name="Go on/Q24a" tags="" position="954,7579" size="100,100">&lt;&lt;if $IPaPA is true and $IAPP eq false and $IPePA eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q25]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -485,20 +490,20 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="71" name="Go on [Q25" tags="" position="879,7729" size="100,100">The objective section of the note must include
+</tw-passagedata><tw-passagedata pid="64" name="Go on [Q25" tags="" position="879,7729" size="100,100">The objective section of the note must include
  review of systems  &lt;&lt;checkbox &quot;$ROS&quot; false true&gt;&gt;
  labs/diagnostics from current visit  &lt;&lt;checkbox &quot;$LD&quot; false true&gt;&gt;
  assessment of findings &lt;&lt;checkbox &quot;$findings&quot; false true&gt;&gt;
 &lt;&lt;button [[Go on/Q25a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="72" name="Please try again/question24" tags="" position="1309,7501" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="73" name="Go on/Q25a" tags="" position="879,7879" size="100,100">&lt;&lt;if $ROS eq true and $LD eq false and $findings eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="65" name="Please try again/question24" tags="" position="1309,7501" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="66" name="Go on/Q25a" tags="" position="879,7879" size="100,100">&lt;&lt;if $ROS eq true and $LD eq false and $findings eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q26]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question25]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="74" name="Go on [Q26" tags="" position="804,8029" size="100,100">Provider A takes the patient’s blood pressure manually using a stethoscope and a blood pressure cuff, as she does on each of her patients. Provider A  would like her colleague to recheck the blood pressure. Provider B takes the patient’s blood pressure by attaching the automatic blood pressure cuff machine. 
+</tw-passagedata><tw-passagedata pid="67" name="Go on [Q26" tags="" position="804,8029" size="100,100">Provider A takes the patient’s blood pressure manually using a stethoscope and a blood pressure cuff, as she does on each of her patients. Provider A  would like her colleague to recheck the blood pressure. Provider B takes the patient’s blood pressure by attaching the automatic blood pressure cuff machine. 
 
 This is an example of which of the following
 Good interrater and good intrarater reliability&lt;&lt;checkbox &quot;$gg&quot; false true&gt;&gt;
@@ -506,7 +511,7 @@ Good intrarater and poor interrater reliability&lt;&lt;checkbox &quot;$gp&quot; 
 Poor interrater and Poor intrarater reliability&lt;&lt;checkbox &quot;$pp&quot; false true&gt;&gt;
 Poor intrarater and good interrater reliability &lt;&lt;checkbox &quot;$pg&quot; false true&gt;&gt;
 &lt;&lt;button [[Go on/Q26a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="75" name="Please try again/question25" tags="" position="1306,7761" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Go on/Q26a" tags="" position="804,8179" size="100,100">&lt;&lt;if $gg eq false and $gp eq true and $pp eq false and $pg  eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="68" name="Please try again/question25" tags="" position="1306,7761" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="69" name="Go on/Q26a" tags="" position="804,8179" size="100,100">&lt;&lt;if $gg eq false and $gp eq true and $pp eq false and $pg  eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q27]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -517,7 +522,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="77" name="Go on [Q27" tags="" position="729,8329" size="100,100">Which of the following statements is most precise in documentation of the normal pharynx?
+</tw-passagedata><tw-passagedata pid="70" name="Go on [Q27" tags="" position="729,8329" size="100,100">Which of the following statements is most precise in documentation of the normal pharynx?
 Pharynx wnl &lt;&lt;checkbox &quot;$wnl&quot; false true&gt;&gt;
 Pharynx pink, moist , anterior tonsillar pillars visible &lt;&lt;checkbox &quot;$pinkmoist&quot; false true&gt;&gt;
 Pharynx without exudate &lt;&lt;checkbox &quot;$exudate&quot; false true&gt;&gt;
@@ -525,7 +530,7 @@ Pharynx without exudate &lt;&lt;checkbox &quot;$exudate&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q27a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="78" name="Please try again/question26" tags="" position="1279,8053" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="79" name="Go on/Q27a" tags="" position="729,8479" size="100,100">&lt;&lt;if $wnl eq true and $pinkmoist eq false and $exudate eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="71" name="Please try again/question26" tags="" position="1279,8053" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="72" name="Go on/Q27a" tags="" position="729,8479" size="100,100">&lt;&lt;if $wnl eq true and $pinkmoist eq false and $exudate eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q28]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -538,14 +543,14 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="80" name="Go on [Q28" tags="" position="654,8629" size="100,100">The last component of the objective section within the progress note is the 
+</tw-passagedata><tw-passagedata pid="73" name="Go on [Q28" tags="" position="654,8629" size="100,100">The last component of the objective section within the progress note is the 
 
 labs and diagnostics &lt;&lt;checkbox &quot;$labs&quot; false true&gt;&gt;
 Physical examination &lt;&lt;checkbox &quot;$pe&quot; false true&gt;&gt;
 Assessment &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q28a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="81" name="Please try again/question 27" tags="" position="1256,8273" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="82" name="Go on/Q28a" tags="" position="654,8779" size="100,100">&lt;&lt;if $labs eq true and $pe eq false and $assessment eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="74" name="Please try again/question 27" tags="" position="1256,8273" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="Go on/Q28a" tags="" position="654,8779" size="100,100">&lt;&lt;if $labs eq true and $pe eq false and $assessment eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q29]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -558,7 +563,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="83" name="Go on [Q29" tags="" position="1979,8645" size="100,100">Which of the statements is written in the IPPA format?  
+</tw-passagedata><tw-passagedata pid="76" name="Go on [Q29" tags="" position="1979,8645" size="100,100">Which of the statements is written in the IPPA format?  
 No abdominal discoloration or masses; bowel sounds x4 quadrants; no rebound   tenderness; no abdominal tympany &lt;&lt;checkbox &quot;$discoloration&quot; false true&gt;&gt;
 No abdominal tympany; no rebound tenderness; no abdominal bruits; no abdominal discoloration or masses &lt;&lt;checkbox &quot;$tympany&quot; false true&gt;&gt;
 No abdominal discoloration or masses, no abdominal tympany, no rebound tenderness, no abdominal bruits &lt;&lt;checkbox &quot;$bruits&quot; false true&gt;&gt; 
@@ -566,7 +571,7 @@ No abdominal discoloration or masses, no abdominal tympany, no rebound tendernes
 &lt;&lt;button [[Go on/Q29a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
  
-</tw-passagedata><tw-passagedata pid="84" name="Please try again/question 28" tags="" position="1153,8545" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="85" name="Go on/Q29a" tags="" position="1979,8795" size="100,100">
+</tw-passagedata><tw-passagedata pid="77" name="Please try again/question 28" tags="" position="1153,8545" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="78" name="Go on/Q29a" tags="" position="1979,8795" size="100,100">
 &lt;&lt;if $discoloration eq false and $tympany eq false and $bruits eq false and $bs eq true&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q30]]&gt;&gt; &lt;&lt;/button&gt;&gt;
@@ -587,7 +592,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="86" name="Go on [Q30" tags="" position="1904,8945" size="100,100">If a measure can produce similar results when it is used repeatedly under the identical condition, it is said to be
+</tw-passagedata><tw-passagedata pid="79" name="Go on [Q30" tags="" position="1904,8945" size="100,100">If a measure can produce similar results when it is used repeatedly under the identical condition, it is said to be
 valid &lt;&lt;checkbox &quot;$valid&quot; false true&gt;&gt;
 reliable &lt;&lt;checkbox &quot;$reliable&quot; false true&gt;&gt;
 accurate &lt;&lt;checkbox &quot;$accurate&quot; false true&gt;&gt;
@@ -595,13 +600,13 @@ accurate &lt;&lt;checkbox &quot;$accurate&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q30a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="87" name="Please try again/question 29" tags="" position="2486,8461" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="88" name="Go on/Q30a" tags="" position="1904,9095" size="100,100">&lt;&lt;if $valid eq false and $reliable eq true and $accurate eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="80" name="Please try again/question 29" tags="" position="2486,8461" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="81" name="Go on/Q30a" tags="" position="1904,9095" size="100,100">&lt;&lt;if $valid eq false and $reliable eq true and $accurate eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q31]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 30]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="89" name="Go on [Q31" tags="" position="1829,9245" size="100,100"> As the provider, you know that the physical examination whether comprehensive or episodic must include:
+</tw-passagedata><tw-passagedata pid="82" name="Go on [Q31" tags="" position="1829,9245" size="100,100"> As the provider, you know that the physical examination whether comprehensive or episodic must include:
  Medications, review of systems &lt;&lt;checkbox &quot;$medros&quot; false true&gt;&gt;
  Medications, general survey &lt;&lt;checkbox &quot;$medgs&quot; false true&gt;&gt;
  vital signs, general survey &lt;&lt;checkbox &quot;$vsgs&quot; false true&gt;&gt;
@@ -610,7 +615,7 @@ This is incorrect, please try again.
  
 &lt;&lt;button [[Go on/Q31a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="90" name="Please try again/question 30" tags="" position="2495,8713" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="91" name="Go on/Q31a" tags="" position="1829,9395" size="100,100">&lt;&lt;if $medros eq true and $medgs eq false and $vsgs eq true and $vsros eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="83" name="Please try again/question 30" tags="" position="2495,8713" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="Go on/Q31a" tags="" position="1829,9395" size="100,100">&lt;&lt;if $medros eq true and $medgs eq false and $vsgs eq true and $vsros eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q32]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -623,7 +628,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="92" name="Go on [Q32" tags="" position="1754,9545" size="100,100">If you are suspecting mononucleosis, you would want to record your examination of the spleen. What is the best documentation to record?
+</tw-passagedata><tw-passagedata pid="85" name="Go on [Q32" tags="" position="1754,9545" size="100,100">If you are suspecting mononucleosis, you would want to record your examination of the spleen. What is the best documentation to record?
 Spleen nonpalpable &lt;&lt;checkbox &quot;$nonpalpable&quot; false true&gt;&gt;
 Spleen not palpated &lt;&lt;checkbox &quot;$notpal&quot; false true&gt;&gt;
 Spleen is unremarkable &lt;&lt;checkbox &quot;$unremarkable&quot; false true&gt;&gt;
@@ -632,7 +637,7 @@ Spleen is within normal limits &lt;&lt;checkbox &quot;$wnl&quot; false true&gt;&
 
 &lt;&lt;button [[Go on/Q32a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="93" name="Please try again/question 31" tags="" position="2624,9257" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Go on/Q32a" tags="" position="1754,9695" size="100,100">&lt;&lt;if $nonpalpable eq true and $notpal eq false and $unremarkable eq false and $wnl  eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="86" name="Please try again/question 31" tags="" position="2624,9257" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="87" name="Go on/Q32a" tags="" position="1754,9695" size="100,100">&lt;&lt;if $nonpalpable eq true and $notpal eq false and $unremarkable eq false and $wnl  eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q33]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -646,7 +651,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="95" name="Go on [Q33" tags="" position="1679,9845" size="100,100">Select the best documentation for the physical examination component of Lisa’s lungs based on what you know about sequence, order and clarity.
+</tw-passagedata><tw-passagedata pid="88" name="Go on [Q33" tags="" position="1679,9845" size="100,100">Select the best documentation for the physical examination component of Lisa’s lungs based on what you know about sequence, order and clarity.
 
 a. Chest is symmetric, no scars. No cardiac heaves or lifts. Symmetrical expansion  with respiration, No thrills appreciated. Point of maximal impulse (PMI) noted at  midclavicular line, in fifth intercostal space. Normal S1 and S2, with regular rate and rhythm. S2 &gt; S1 at the base, S1 &gt; S2 at apex. No splitting of the heart sounds  heard. No murmur. No S3 or S4, no friction rub &lt;&lt;checkbox &quot;$c1&quot; false true&gt;&gt;
 b.  Normal S1 and S2, with regular rate and rhythm. S2 &gt; S1 at the base, S1 &gt; S2 at apex.   No splitting of the heart sounds heard. No murmur. No S3 or S4, no friction rub. Chest is  symmetric, no scars. No cardiac heaves or lifts. Symmetrical expansion with respiration. No thrills appreciated. Point of maximal impulse (PMI) noted at midclavicular line, in   fifth intercostal space. &lt;&lt;checkbox &quot;$c2&quot; false true&gt;&gt;
@@ -654,13 +659,13 @@ c. Chest is symmetric, no scars. No cardiac heaves or lifts. Symmetrical expansi
 
 &lt;&lt;button [[Go on/Q33a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-  	</tw-passagedata><tw-passagedata pid="96" name="Please try again/question32" tags="" position="2629,9565" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="97" name="Go on/Q33a" tags="" position="1679,9995" size="100,100">&lt;&lt;if $c1 eq true and $c2 eq false and $c3 eq false&gt;&gt;
+  	</tw-passagedata><tw-passagedata pid="89" name="Please try again/question32" tags="" position="2629,9565" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="90" name="Go on/Q33a" tags="" position="1679,9995" size="100,100">&lt;&lt;if $c1 eq true and $c2 eq false and $c3 eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q34]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 33]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="98" name="Go on [Q34" tags="" position="1604,10145" size="100,100">Tools or labs which are completed during the history and/or physical examination of Lisa are to be placed where in the progress note? 
+</tw-passagedata><tw-passagedata pid="91" name="Go on [Q34" tags="" position="1604,10145" size="100,100">Tools or labs which are completed during the history and/or physical examination of Lisa are to be placed where in the progress note? 
  If subjective only, they are placed in subjective section of the note &lt;&lt;checkbox &quot;$sub&quot; false true&gt;&gt;
  If objective only, they are placed in the objective section of the note &lt;&lt;checkbox &quot;$obj&quot; false true&gt;&gt;
  If subjective, objective or contain both, they are all placed in the objective section of the note &lt;&lt;checkbox &quot;$subobj&quot; false true&gt;&gt;
@@ -668,13 +673,13 @@ This is incorrect, please try again.
  
 &lt;&lt;button [[Go on/Q34a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="99" name="Please try again/question 33" tags="" position="2406,9789" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="100" name="Go on/Q34a" tags="" position="1604,10295" size="100,100">&lt;&lt;if $sub eq false and $obj eq false and $subobj eq true&gt;
+</tw-passagedata><tw-passagedata pid="92" name="Please try again/question 33" tags="" position="2406,9789" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="93" name="Go on/Q34a" tags="" position="1604,10295" size="100,100">&lt;&lt;if $sub eq false and $obj eq false and $subobj eq true&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q35]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 34]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="101" name="Go on [Q35" tags="" position="1529,10445" size="100,100">As the provider you are using the ID-migraine tool to help with your clinical decision of Lisa’s complaint of throbbing headache. The level of evidence attached to this tool is?
+</tw-passagedata><tw-passagedata pid="94" name="Go on [Q35" tags="" position="1529,10445" size="100,100">As the provider you are using the ID-migraine tool to help with your clinical decision of Lisa’s complaint of throbbing headache. The level of evidence attached to this tool is?
 Likely reliable evidence &lt;&lt;checkbox &quot;$likely&quot; false true&gt;&gt;
 Mid-level evidence &lt;&lt;checkbox &quot;$midlevel&quot; false true&gt;&gt;
 lower-level evidence &lt;&lt;checkbox &quot;$lower&quot; false true&gt;&gt;
@@ -682,7 +687,7 @@ lower-level evidence &lt;&lt;checkbox &quot;$lower&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q35a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="102" name="Please try again/question 34" tags="" position="2251,10093" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="103" name="Go on/Q35a" tags="" position="1529,10595" size="100,100">&lt;&lt;if $likely eq true and $midlevel eq true and $lower eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="95" name="Please try again/question 34" tags="" position="2251,10093" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="96" name="Go on/Q35a" tags="" position="1529,10595" size="100,100">&lt;&lt;if $likely eq true and $midlevel eq true and $lower eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q36]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -692,7 +697,7 @@ This is incorrect, please try again.
 XX
 
 
-</tw-passagedata><tw-passagedata pid="104" name="Go on [Q36" tags="" position="1454,10745" size="100,100">You are considering the hypothesis of migraine. To assess Lisa the provider will use the Pound Clinical Rule for diagnosis of migraine. Lisa has three clinical features which provide her with a likelihood ratio (LR) of ...?
+</tw-passagedata><tw-passagedata pid="97" name="Go on [Q36" tags="" position="1454,10745" size="100,100">You are considering the hypothesis of migraine. To assess Lisa the provider will use the Pound Clinical Rule for diagnosis of migraine. Lisa has three clinical features which provide her with a likelihood ratio (LR) of ...?
 •
  LR 3.5 &lt;&lt;&quot;$3.5&quot; false true&gt;&gt;
  LR 4.0 &lt;&lt;checkbox &quot;$4.0&quot; false true&gt;&gt;
@@ -702,7 +707,7 @@ XX
  
  
 &lt;&lt;button [[Go on/Q36a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="105" name="Please try again/question 35" tags="" position="2244,10381" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="106" name="Go on/Q36a" tags="" position="1454,10895" size="100,100">&lt;&lt;if $3.5 eq true and $4.0 eq false and $24.0 eq false and $0.35  eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="98" name="Please try again/question 35" tags="" position="2244,10381" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="99" name="Go on/Q36a" tags="" position="1454,10895" size="100,100">&lt;&lt;if $3.5 eq true and $4.0 eq false and $24.0 eq false and $0.35  eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q37]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -710,7 +715,7 @@ This is incorrect, please try again.
 &lt;&lt;button [[Please try again/question 36]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="107" name="Go on [Q37" tags="" position="1379,11045" size="100,100">The hypothesis is Generalized Anxiety disorder (GAD). . The presence of nausea, muscle tightness and diaphoresis are considered to be which of the following? 
+</tw-passagedata><tw-passagedata pid="100" name="Go on [Q37" tags="" position="1379,11045" size="100,100">The hypothesis is Generalized Anxiety disorder (GAD). . The presence of nausea, muscle tightness and diaphoresis are considered to be which of the following? 
 
 A)Significant Positives &lt;&lt;checkbox &quot;$positive&quot; false true&gt;&gt;
 B)Significant Negatives &lt;&lt;checkbox &quot;$negative&quot; false true&gt;&gt;
@@ -720,7 +725,7 @@ C)Confounding &lt;&lt;checkbox &quot;$confounding&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q37a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="108" name="Please try again/question 36" tags="" position="2357,10689" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="109" name="Go on/Q37a" tags="" position="1379,11195" size="100,100">&lt;&lt;if $positive eq true and $negative eq false and $confounder eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="101" name="Please try again/question 36" tags="" position="2357,10689" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="102" name="Go on/Q37a" tags="" position="1379,11195" size="100,100">&lt;&lt;if $positive eq true and $negative eq false and $confounder eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q38]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -736,7 +741,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="110" name="Go on [Q38" tags="" position="1304,11345" size="100,100"> You assessed Lisa with the Generalized Anxiety disorder scale (GAD 7).  This tool has an evidence level of ?
+</tw-passagedata><tw-passagedata pid="103" name="Go on [Q38" tags="" position="1304,11345" size="100,100"> You assessed Lisa with the Generalized Anxiety disorder scale (GAD 7).  This tool has an evidence level of ?
 Level 1 &lt;&lt;checkbox &quot;$LOE1&quot; false true&gt;&gt;
 Level 2 &lt;&lt;checkbox &quot;$LOE2&quot; false true&gt;&gt;
 Level 3 &lt;&lt;checkbox &quot;$LOE3&quot; false true&gt;&gt;
@@ -745,7 +750,7 @@ Level 3 &lt;&lt;checkbox &quot;$LOE3&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q38a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="111" name="Please try again/question37" tags="" position="2382,10985" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="112" name="Go on/Q38a" tags="" position="1304,11495" size="100,100">&lt;&lt;if $positive  eq true and $negative eq false and $confounding eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="104" name="Please try again/question37" tags="" position="2382,10985" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="105" name="Go on/Q38a" tags="" position="1304,11495" size="100,100">&lt;&lt;if $positive  eq true and $negative eq false and $confounding eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q39]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -760,7 +765,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="113" name="Go on [Q39" tags="" position="1229,11645" size="100,100">Which of the following is appropriate in the Assessment portion of the SOAP framework?
+</tw-passagedata><tw-passagedata pid="106" name="Go on [Q39" tags="" position="1229,11645" size="100,100">Which of the following is appropriate in the Assessment portion of the SOAP framework?
 Sore throat, intermittent fever, headache and tonsillar pillars enlarged &lt;&lt;checkbox &quot;$sorethroat&quot; false true&gt;&gt;
 Pharyngitis r/o Strep Pharyngitis &lt;&lt;checkbox &quot;$pharyngitis&quot; false true&gt;&gt;
 Rapid strep  screen positive  &lt;&lt;checkbox &quot;$rapid&quot; false true&gt;&gt;
@@ -768,14 +773,14 @@ Rapid strep  screen positive  &lt;&lt;checkbox &quot;$rapid&quot; false true&gt;
 
 &lt;&lt;button [[Go on/Q39a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="114" name="Please try again/question 38" tags="" position="2415,11157" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="115" name="Go on/Q39a" tags="" position="1229,11795" size="100,100">&lt;&lt;if $sorethroat eq false and $pharyngitis eq true and $rapid eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="107" name="Please try again/question 38" tags="" position="2415,11157" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="108" name="Go on/Q39a" tags="" position="1229,11795" size="100,100">&lt;&lt;if $sorethroat eq false and $pharyngitis eq true and $rapid eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q40]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 39]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="116" name="Go on [Q40" tags="" position="1154,11945" size="100,100">The SOAP framework is used for: 
+</tw-passagedata><tw-passagedata pid="109" name="Go on [Q40" tags="" position="1154,11945" size="100,100">The SOAP framework is used for: 
 •1. Standard format for organizing documentation
 •2. Consists of subjective, objective, assessment and plan
 •3. Form of communication
@@ -789,13 +794,13 @@ This is incorrect, please try again.
 
 &lt;&lt;button [[Go on/Q40a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="117" name="Please try again/question 39" tags="" position="2464,11373" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="118" name="Go on/Q40a" tags="" position="1154,12095" size="100,100">&lt;&lt;if $A eq false and $B eq false and $C eq false and $D eq true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="110" name="Please try again/question 39" tags="" position="2464,11373" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="111" name="Go on/Q40a" tags="" position="1154,12095" size="100,100">&lt;&lt;if $A eq false and $B eq false and $C eq false and $D eq true&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q41]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 40]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="119" name="Go on [Q41" tags="" position="1079,12245" size="100,100"> For each of the following pieces of data indicate which area of the SOAP note the date will be documented in.
+</tw-passagedata><tw-passagedata pid="112" name="Go on [Q41" tags="" position="1079,12245" size="100,100"> For each of the following pieces of data indicate which area of the SOAP note the date will be documented in.
  
  A. Drinks 4 beers a night
 •B. Lungs clear bilaterally A &amp; P
@@ -813,13 +818,13 @@ This is incorrect, please try again.
 &lt;&lt;checkbox &quot;$not/does&quot; false true&gt;&gt;
 &lt;&lt;button [[Go on/Q41a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="120" name="Please try again/question 40" tags="" position="2541,11633" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="121" name="Go on/Q41a" tags="" position="1079,12395" size="100,100">&lt;&lt;if $support eq true and $notsupport eq false and $not/does eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="113" name="Please try again/question 40" tags="" position="2541,11633" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="114" name="Go on/Q41a" tags="" position="1079,12395" size="100,100">&lt;&lt;if $support eq true and $notsupport eq false and $not/does eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q42]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 41]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="122" name="Go on [Q42" tags="" position="1004,12545" size="100,100">Results of the rapid strep test done in your office while Lisa waits would be placed where in your note?
+</tw-passagedata><tw-passagedata pid="115" name="Go on [Q42" tags="" position="1004,12545" size="100,100">Results of the rapid strep test done in your office while Lisa waits would be placed where in your note?
 
 Plan &lt;&lt;checkbox &quot;$plan&quot; false true&gt;&gt;
 Assessment &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
@@ -829,7 +834,7 @@ Subjective data &lt;&lt;checkbox &quot;$subjective&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q42a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="123" name="Please try again/question 41" tags="" position="2598,11849" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="124" name="Go on/Q42a" tags="" position="1004,12695" size="100,100">&lt;&lt;if $plan eq false and $assessment eq false and $objective eq true and subjective eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="116" name="Please try again/question 41" tags="" position="2598,11849" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="117" name="Go on/Q42a" tags="" position="1004,12695" size="100,100">&lt;&lt;if $plan eq false and $assessment eq false and $objective eq true and subjective eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q43]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -838,7 +843,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="125" name="Go on [Q43" tags="" position="929,12845" size="100,100">During the physical examination of Lisa, you hear an accelerated heart rate.  Dynamed/EEP state that risk factors for a poor outcome include anemia, fever and dehydration. You review Lisa’s chart, her temperature is 98.6. Today&#39;s temperature would be placed where in the critical thinking table?
+</tw-passagedata><tw-passagedata pid="118" name="Go on [Q43" tags="" position="929,12845" size="100,100">During the physical examination of Lisa, you hear an accelerated heart rate.  Dynamed/EEP state that risk factors for a poor outcome include anemia, fever and dehydration. You review Lisa’s chart, her temperature is 98.6. Today&#39;s temperature would be placed where in the critical thinking table?
  
  Significant positive &lt;&lt;checkbox &quot;$positive&quot; false true&gt;&gt;
  Significant negative &lt;&lt;checkbox &quot;$negative&quot; false true&gt;&gt;
@@ -847,14 +852,14 @@ This is incorrect, please try again.
  
 &lt;&lt;button [[Go on/Q43a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="126" name="Please try again/question 42" tags="" position="2499,12269" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="127" name="Go on/Q43a" tags="" position="929,12995" size="100,100">&lt;&lt;if $positive eq false and $negative eq false and $confounder eq true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="119" name="Please try again/question 42" tags="" position="2499,12269" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="120" name="Go on/Q43a" tags="" position="929,12995" size="100,100">&lt;&lt;if $positive eq false and $negative eq false and $confounder eq true&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q44]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 43]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
- </tw-passagedata><tw-passagedata pid="128" name="Go on [Q44" tags="" position="929,13145" size="100,100">The cognitive process by which the clinician moves from the physical exam to the Assessment requires the clinician to consider.....
+ </tw-passagedata><tw-passagedata pid="121" name="Go on [Q44" tags="" position="929,13145" size="100,100">The cognitive process by which the clinician moves from the physical exam to the Assessment requires the clinician to consider.....
 
 the weight of the data &lt;&lt;checkbox &quot;$weight&quot; false true&gt;&gt;
 Levels of Evidence &lt;&lt;checkbox &quot;$LOE&quot; false true&gt;&gt;
@@ -864,7 +869,7 @@ All of the above &lt;&lt;checkbox &quot;$all&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q 44a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="129" name="Go on/Q 44a" tags="" position="929,13295" size="100,100">&lt;&lt;if $weight eq false and $LOE eq false and $PNC eq false and $all eq true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="122" name="Go on/Q 44a" tags="" position="929,13295" size="100,100">&lt;&lt;if $weight eq false and $LOE eq false and $PNC eq false and $all eq true&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q45]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -872,7 +877,7 @@ This is incorrect, please try again.
 &lt;&lt;button [[Please try again/question44]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="130" name="Go on [Q45" tags="" position="854,13445" size="100,100">Likelihood ratios for signs and symptoms found on a physical exam provide us with which of the following?  
+</tw-passagedata><tw-passagedata pid="123" name="Go on [Q45" tags="" position="854,13445" size="100,100">Likelihood ratios for signs and symptoms found on a physical exam provide us with which of the following?  
 
 A. The positive or negative significance for diagnoses &lt;&lt;checkbox &quot;$posneg&quot; false true&gt;&gt;
 B. An increase or decrease in the probability of physical exam findings for the diagnoses &lt;&lt;checkbox &quot;$increase&quot; false true&gt;&gt;
@@ -882,14 +887,14 @@ D. An increase or decrease in the frequency of physical exam findings for a   pa
 
 &lt;&lt;button [[Go on/Q45a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="131" name="Please try again/question44" tags="" position="3256,12649" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="132" name="Please try again/question 43" tags="" position="2541,12481" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="Go on/Q45a" tags="" position="854,13595" size="100,100">&lt;&lt;if $posneg eq false and $increase eq true and $sen eq false and $freq eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="124" name="Please try again/question44" tags="" position="3256,12649" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="125" name="Please try again/question 43" tags="" position="2541,12481" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="126" name="Go on/Q45a" tags="" position="854,13595" size="100,100">&lt;&lt;if $posneg eq false and $increase eq true and $sen eq false and $freq eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q46]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 45]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="134" name="Go on [Q46" tags="" position="2647,13325" size="100,100">During today’s visit with Lisa you order a CBC to be drawn at your clinic lab and ask the lab to call you today with the results. The results show WBC 6.2 x 1000/mm3;  RBC 4.4 x 1,000,000/mm3 ,Hgb 9g/dl,  Hct 28.
+</tw-passagedata><tw-passagedata pid="127" name="Go on [Q46" tags="" position="2647,13325" size="100,100">During today’s visit with Lisa you order a CBC to be drawn at your clinic lab and ask the lab to call you today with the results. The results show WBC 6.2 x 1000/mm3;  RBC 4.4 x 1,000,000/mm3 ,Hgb 9g/dl,  Hct 28.
 
 Question:  The results of this lab data are documented where in the SOAP note? 
 Subjective &lt;&lt;checkbox &quot;$sub&quot; false true&gt;&gt;
@@ -902,14 +907,14 @@ Plan &lt;&lt;checkbox &quot;$plan&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q46a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="135" name="Please try again/question 45" tags="" position="3385,12765" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="136" name="Go on/Q46a" tags="" position="2647,13475" size="100,100">&lt;&lt;if $sub eq false and $obj eq true and $assess eq false and $plan eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="128" name="Please try again/question 45" tags="" position="3385,12765" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="129" name="Go on/Q46a" tags="" position="2647,13475" size="100,100">&lt;&lt;if $sub eq false and $obj eq true and $assess eq false and $plan eq false &gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q47]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 46]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="137" name="Go on [Q47" tags="" position="2572,13625" size="100,100">The history and physical examination have been completed, the clinician believes that a definitive diagnosis cannot be confirmed- that more testing is required and the results will not be available prior to the patient leaving the visit today. The diagnosis should be written in the Assessment section of the SOAP note as the following?
+</tw-passagedata><tw-passagedata pid="130" name="Go on [Q47" tags="" position="2572,13625" size="100,100">The history and physical examination have been completed, the clinician believes that a definitive diagnosis cannot be confirmed- that more testing is required and the results will not be available prior to the patient leaving the visit today. The diagnosis should be written in the Assessment section of the SOAP note as the following?
 Streptococcal Pharyngitis &lt;&lt;checkbox &quot;$SP&quot; false true&gt;&gt;
 Red pharynx &lt;&lt;checkbox &quot;$redPharynx&quot; false true&gt;&gt;
 Pharyngitis r/o Streptococcal Pharyngitis, mononucleosis &lt;&lt;checkbox &quot;$Pr/oSP&quot; false true&gt;&gt;
@@ -917,7 +922,7 @@ r/o mononucleosis &lt;&lt;checkbox &quot;$romono &quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q47a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="138" name="Please try again/question 46" tags="" position="3226,13197" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="139" name="Go on/Q47a" tags="" position="2572,13775" size="100,100">&lt;&lt;if $&lt;&lt;if $SP eq false and $redPharynx eq false and $Pr/oSP eq true&gt; and $romono &gt;&gt;
+</tw-passagedata><tw-passagedata pid="131" name="Please try again/question 46" tags="" position="3226,13197" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="132" name="Go on/Q47a" tags="" position="2572,13775" size="100,100">&lt;&lt;if $&lt;&lt;if $SP eq false and $redPharynx eq false and $Pr/oSP eq true&gt; and $romono &gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q48]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -925,7 +930,7 @@ This is incorrect, please try again.
 &lt;&lt;button [[Please try again/question 47]]&gt;&gt; &lt;&lt;/button&gt;&gt;
  
 
-</tw-passagedata><tw-passagedata pid="140" name="Go on [Q48" tags="" position="2497,13925" size="100,100">Lisa is found to have a systolic murmur 2/6. McGee (2018) sets the Kappa for identification of a systolic murmur being present or absent using auscultation to have a kappa of 0.19  This may be interpreted as meaning which of the following? Two or more clinicians will…
+</tw-passagedata><tw-passagedata pid="133" name="Go on [Q48" tags="" position="2497,13925" size="100,100">Lisa is found to have a systolic murmur 2/6. McGee (2018) sets the Kappa for identification of a systolic murmur being present or absent using auscultation to have a kappa of 0.19  This may be interpreted as meaning which of the following? Two or more clinicians will…
 A.have perfect agreement on the presence or absence of a systolic murmur by auscultation (on the same patient under the same circumstances).&lt;&lt;checkbox &quot;$perfect&quot; false true&gt;&gt;
 B.agree 19% of the time on the presence or absence of a systolic murmur by auscultation (on the same patient under the same circumstances).&lt;&lt;checkbox &quot;$agree&quot; false true&gt;&gt;
 C.have slight agreement on the presence or absence of a systolic murmur by auscultation (on the same patient under the same circumstances).&lt;&lt;checkbox &quot;$slight&quot; false true&gt;&gt;
@@ -933,13 +938,13 @@ D. agree 19 out of 100 times on the presence or absence of a systolic murmur by 
 
 
 &lt;&lt;button [[Go on/Q48a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="141" name="Please try again/question 47" tags="" position="3279,13453" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="142" name="Go on/Q48a" tags="" position="2497,14075" size="100,100">&lt;&lt;if $perfect eq false and $agree eq false and $slight eq true and $percentage eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="134" name="Please try again/question 47" tags="" position="3279,13453" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="135" name="Go on/Q48a" tags="" position="2497,14075" size="100,100">&lt;&lt;if $perfect eq false and $agree eq false and $slight eq true and $percentage eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q49]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again. 
 &lt;&lt;button [[Please try again/question 48]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="143" name="Go on [Q49" tags="" position="2422,14225" size="100,100">What risk factors increase the likelihood of Lisa having PCOS?
+</tw-passagedata><tw-passagedata pid="136" name="Go on [Q49" tags="" position="2422,14225" size="100,100">What risk factors increase the likelihood of Lisa having PCOS?
 
 Total cholesterol level of 250mg/dL and hypertension &lt;&lt;checkbox &quot;$total&quot; false true&gt;&gt;
 Hirsutism, obesity, irregular menses &lt;&lt;checkbox &quot;$obesity &quot; false true&gt;&gt;
@@ -950,7 +955,7 @@ all of the above &lt;&lt;checkbox &quot;$all&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on/Q49a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="144" name="Please try again/question 48" tags="" position="3288,13829" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="145" name="Go on/Q49a" tags="" position="2422,14375" size="100,100">&lt;&lt;if $total eq false and $obesity eq false and $large DM2 eq true and $all eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="137" name="Please try again/question 48" tags="" position="3288,13829" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="138" name="Go on/Q49a" tags="" position="2422,14375" size="100,100">&lt;&lt;if $total eq false and $obesity eq false and $large DM2 eq true and $all eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q50]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -958,7 +963,7 @@ This is incorrect, please try again.
 &lt;&lt;button [[Please try again/question 49]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="146" name="Go on [Q50" tags="" position="2347,14525" size="100,100">A patient comes to the clinic complaining of chest pain. To evaluate if this is a myocardial infarction you have your medical assistant obtain an ECG to see if there is ischemia. Evaluating with an EKG for ischemia has a level A evidence in Essentials Evidence Plus (EEP). Question:  This level of evidence is most closely defined by which of the following?
+</tw-passagedata><tw-passagedata pid="139" name="Go on [Q50" tags="" position="2347,14525" size="100,100">A patient comes to the clinic complaining of chest pain. To evaluate if this is a myocardial infarction you have your medical assistant obtain an ECG to see if there is ischemia. Evaluating with an EKG for ischemia has a level A evidence in Essentials Evidence Plus (EEP). Question:  This level of evidence is most closely defined by which of the following?
 
 •A. Evidence obtained from at least one properly designed meta- analysis of randomized controlled trial. &lt;&lt;checkbox &quot;$meta&quot; false true&gt;&gt;
 
@@ -971,7 +976,7 @@ This is incorrect, please try again.
 
 &lt;&lt;button [[Go on/Q50a]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="147" name="Please try again/question 49" tags="" position="3341,14073" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="148" name="Go on/Q50a" tags="" position="2347,14675" size="100,100">&lt;&lt;if $meta eq true and $control eq false and $case eq false and $experts eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="140" name="Please try again/question 49" tags="" position="3341,14073" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="141" name="Go on/Q50a" tags="" position="2347,14675" size="100,100">&lt;&lt;if $meta eq true and $control eq false and $case eq false and $experts eq false&gt;&gt;
 This is the correct answer
 &lt;&lt;button [[Go on [Q51]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -982,7 +987,7 @@ This is incorrect, please try again.
 
 
 
-</tw-passagedata><tw-passagedata pid="149" name="Go on [Q51" tags="" position="2347,14825" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="150" name="AnswerOne" tags="" position="412,489" size="100,100">&lt;&lt;if $answerone eq true and $answertwo eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="142" name="Go on [Q51" tags="" position="2347,14825" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="143" name="AnswerOne" tags="" position="676,161" size="100,100">&lt;&lt;if $answerone eq true and $answertwo eq false&gt;&gt;
     This is the correct answer.
 	&lt;&lt;button [[Go On|Q2]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
