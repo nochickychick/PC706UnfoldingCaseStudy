@@ -128,11 +128,12 @@ This is the correct answer
 &lt;&lt;button [[Go on|Q3]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again
-&lt;&lt;button  [[Please try again|Q2]] &lt;&lt;/button&gt;&gt;
+&lt;&lt;button  [[Please try again|Q2]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Q3" tags="" position="1494,155" size="100,100">The History of Present Illness (HPI) falls into which category of information?
+
 objective data &lt;&lt;checkbox &quot;$objective&quot; false true&gt;&gt;
 subjective data &lt;&lt;checkbox &quot;$subjective&quot; false true&gt;&gt;
- assessment data &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
+assessment data &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
  
  
  &lt;&lt;button [[Q3A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
@@ -167,17 +168,19 @@ assessment data &lt;&lt;checkbox&quot;$assessment&quot; false true&gt;&gt;
 
 
 &lt;&lt;button [[Q5A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="11" name="Q5A" tags="" position="864,1301" size="100,100">&lt;&lt;if $objective eq true and $subjective eq false and $objective eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Q5A" tags="" position="864,1301" size="100,100">&lt;&lt;if $objective eq true and $subjective eq false and $assessment eq false&gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Go on|Q6]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again, 
 &lt;&lt;button [[Please try again|Q5]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
--</tw-passagedata><tw-passagedata pid="12" name="Q6" tags="" position="1137,1299" size="100,100">Lisa tells you during the interview that most mornings she also has a dull ache in the back of her head which is 6/10, and she gets no relief with OTC Tylenol or Motrin.  
+
+
+</tw-passagedata><tw-passagedata pid="12" name="Q6" tags="" position="1137,1299" size="100,100">Lisa tells you during the interview that most mornings she also has a dull ache in the back of her head which is 6/10, and she gets no relief with OTC Tylenol or Motrin.  
 
  Assessment &lt;&lt;checkbox &quot;$assessment&quot; false true&gt;&gt;
- History of present illness (HPI)&lt;&lt;checkbox &quot;HPI&quot; false true&gt;&gt;
+ History of present illness (HPI)&lt;&lt;checkbox &quot;$HPI&quot; false true&gt;&gt;
  Review of systems &lt;&lt;checkbox &quot;$ROS&quot; false true&gt;&gt;
  
 &lt;&lt;button [[Go on|Q6A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
@@ -230,12 +233,12 @@ This is incorrect, please try again,
 &lt;&lt;/if&gt;&gt;	
 </tw-passagedata><tw-passagedata pid="22" name="Q10" tags="" position="1436,2200" size="100,100">Lisa has informed the provider that she has a dull unilateral, throbbing ache towards  the back of her head. The provider begins to hypothesize that she might have headaches. Using your resources identify the Likelihood ratio (LR) for this complaint. 
  
-LR 2.1 &lt;&lt;checkbox &quot;$2.1&quot; false true&gt;&gt;
-LR 3.3 &lt;&lt;checkbox &quot;$3.3&quot; false true&gt;&gt;
-LR 6.5 &lt;&lt;checkbox &quot;$6.5&quot; false true&gt;&gt;
+LR 2.1 &lt;&lt;checkbox &quot;$Twoone&quot; false true&gt;&gt;
+LR 3.3 &lt;&lt;checkbox &quot;$Threethree&quot; false true&gt;&gt;
+LR 6.5 &lt;&lt;checkbox &quot;$Sixfive&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Submit|Q10A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="23" name="Q10A" tags="" position="1772,2206" size="100,100">&lt;&lt;if $2.1 eq false and $3.3 eq true and $6.5 eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="23" name="Q10A" tags="" position="1772,2206" size="100,100">&lt;&lt;if $Twoone eq false and $Threethree eq true and $Sixfive eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Continue|Q11]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
