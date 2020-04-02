@@ -100,13 +100,13 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="PC706UCS_PartOne" startnode="1" creator="Twine" creator-version="2.3.5" ifid="9D00CADD-0350-49D0-9B6F-22A7B6AD033E" zoom="0.6" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Starthere" tags="" position="132,153" size="100,100">Demographics: Lisa Smith, 16 years old, female, bi-racial 16-year-old with a complaint of feeling “tired&quot; for the last 3 1/2 months (onset) but also been feeling increasingly “nervous”.  2-3 mornings each week she “feels too sick and tired to go to school”. She attends the local regional high school, however once at school she is continually going to the nurse’s office requesting to leave because she is &quot;tired&quot;. For the last week, she has noticed some “swollen” nodules at the back of her neck “maybe my lymph nodes” and states she has had a fever, she does not have a thermometer at home. Most mornings she states she also has a dull ache in the back of her head (location) rates as 6/10 (characteristic) , no help with OTC Tylenol or IBP (alleviatingRelieving). She states she has a belly ache that is about a 3/10 and non-radiating but occasionally with nausea and vomiting. Some days she feels lightheaded and dizzy. She just completed her menses, but notes that she is very irregular. Menses are light and last 4-7 days.
+	<tw-storydata name="PC706UCS_PartOne" startnode="1" creator="Twine" creator-version="2.3.6" ifid="9D00CADD-0350-49D0-9B6F-22A7B6AD033E" zoom="0.6" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Starthere" tags="" position="132,153" size="100,100">Demographics: Lisa Smith, 16 years old, female, bi-racial 16-year-old with a complaint of feeling “tired&quot; for the last 3 1/2 months (onset) but also been feeling increasingly “nervous”.  2-3 mornings each week she “feels too sick and tired to go to school”. She attends the local regional high school, however once at school she is continually going to the nurse’s office requesting to leave because she is &quot;tired&quot;. For the last week, she has noticed some “swollen” nodules at the back of her neck “maybe my lymph nodes” and states she has had a fever, she does not have a thermometer at home. Most mornings she states she also has a dull ache in the back of her head (location) rates as 6/10 (characteristic) , no help with OTC Tylenol or IBP (alleviatingRelieving). She states she has a belly ache that is about a 3/10 and non-radiating but occasionally with nausea and vomiting. Some days she feels lightheaded and dizzy. She just completed her menses, but notes that she is very irregular. Menses are light and last 4-7 days.
 
 Lives at home with mother and mother&#39;s boyfriend, and younger sister. She has a boyfriend that she has been dating &quot;steady&quot; for 2 months, states she is sexually active.
 &lt;&lt;button [[Q1]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 </tw-passagedata><tw-passagedata pid="2" name="Q1" tags="" position="396,167" size="100,100">Please answer the following questions. You must answer the question correctly to move to the next question
 
-The visit with Lisa is a comprehensive or episodic visit? Please select the correct answer
+Is the visit with Lisa is a comprehensive or episodic visit? Please select the correct answer.
 
 Episodic &lt;&lt;checkbox &quot;$answerone&quot; false true&gt;&gt;
 Comprehensive &lt;&lt;checkbox &quot;$answertwo&quot; false true&gt;&gt;
@@ -184,7 +184,7 @@ This is incorrect, please try again,
  Review of systems &lt;&lt;checkbox &quot;$ROS&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Go on|Q6A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="12" name="Q6A" tags="" position="1397,1293" size="100,100">&lt;&lt;if $assessment eq true and $HPI eq false and $ROS eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Q6A" tags="" position="1397,1293" size="100,100">&lt;&lt;if $assessment eq false and $HPI eq true and $ROS eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Continue|Q7]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -257,14 +257,17 @@ This is the correct answer.
 &lt;&lt;else&gt;&gt;
 This is incorrect, please try again,
 &lt;&lt;button [[Please try again|Q11]]&gt;&gt;  &lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Q12" tags="" position="996,2668" size="100,100">From the patient’s description of her illness, which of the eight dimensions of symptom analysis are not present.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Q12" tags="" position="1021,2634.6666666666665" size="100,100">She states she has a belly ache that is about a 3/10 and non-radiating but occasionally with nausea and vomiting. 
+
+From the patient’s description of her illness, which of the eight dimensions of symptom analysis are not present?
+
 aggravating &lt;&lt;checkbox &quot;$aggravating&quot; false true&gt;&gt;
-associated manifestations &lt;&lt;checkbox &quot;$asscoiated&quot; false true&gt;&gt;
+associated manifestations &lt;&lt;checkbox &quot;$associated&quot; false true&gt;&gt;
 Quality &lt;&lt;checkbox &quot;$quality&quot; false true&gt;&gt;
 
 &lt;&lt;button [[Q12A]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="24" name="Q12A" tags="" position="1604,2698" size="100,100">&lt;&lt;if $aggravating eq true and $associated eq false and $quality eq false &gt;&gt;
+</tw-passagedata><tw-passagedata pid="24" name="Q12A" tags="" position="1592.3333333333333,2581.3333333333335" size="100,100">&lt;&lt;if $aggravating eq true and $associated eq false and $quality eq false &gt;&gt;
 This is the correct answer.
 &lt;&lt;button [[Continue|Q13]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -396,7 +399,7 @@ This is incorrect, please try again.
 &lt;&lt;button [[Please try again|Q20]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="41" name="Q1A" tags="" position="674.3333333333334,167" size="100,100">&lt;&lt;if $answerone eq true and $answertwo eq false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="41" name="Q1A" tags="" position="674,167" size="100,100">&lt;&lt;if $answerone eq true and $answertwo eq false&gt;&gt;
     This is the correct answer.
 	&lt;&lt;button [[Go On|Q2]]&gt;&gt; &lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
